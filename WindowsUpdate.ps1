@@ -1,5 +1,7 @@
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
+Install-PackageProvider -Name Nuget -MinimumVersion 2.8.5.201 -Force
+
 # Install PSWindowsUpdate module if not already installed
 if (-not (Get-Module -ListAvailable -Name PSWindowsUpdate)) {
     Install-Module -Name PSWindowsUpdate -Force -SkipPublisherCheck
