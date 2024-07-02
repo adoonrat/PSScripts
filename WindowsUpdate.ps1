@@ -1,3 +1,5 @@
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+
 # Install PSWindowsUpdate module if not already installed
 if (-not (Get-Module -ListAvailable -Name PSWindowsUpdate)) {
     Install-Module -Name PSWindowsUpdate -Force -SkipPublisherCheck
