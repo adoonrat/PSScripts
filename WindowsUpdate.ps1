@@ -13,7 +13,7 @@ Import-Module PSWindowsUpdate
 $KB = "KB5039212"
 
 # Hide the progress UI
-$ProgressPreference = 'SilentlyContinue'
+#$ProgressPreference = 'SilentlyContinue'
 
 # Search for available updates
 $Updates = Get-WindowsUpdate -KBArticleID $KB -AcceptAll -IgnoreReboot
